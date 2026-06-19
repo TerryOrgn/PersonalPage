@@ -60,6 +60,7 @@ export default function Cases({ items }: CasesProps) {
           <>
             {/* Backdrop */}
             <motion.div
+              key="backdrop"
               className="fixed inset-0 bg-black/60 backdrop-blur-sm z-50"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
@@ -68,11 +69,13 @@ export default function Cases({ items }: CasesProps) {
             />
             {/* Panel */}
             <motion.div
+              key="panel"
               className="fixed inset-0 z-50 flex items-center justify-center p-6"
               initial={{ opacity: 0, scale: 0.95 }}
               animate={{ opacity: 1, scale: 1 }}
               exit={{ opacity: 0, scale: 0.95 }}
               transition={{ duration: 0.2 }}
+              onClick={() => setSelected(null)}
             >
               <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-xl p-8 max-w-2xl w-full max-h-[80vh] overflow-y-auto">
                 <div className="flex items-center justify-between mb-6">
