@@ -2,6 +2,7 @@ import { SITE_DATA } from "@/data/site";
 import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Quote from "@/components/Quote";
+import About from "@/components/About";
 
 export default function Home() {
   return (
@@ -9,6 +10,7 @@ export default function Home() {
       <Nav brand={SITE_DATA.nav.brand} links={SITE_DATA.nav.links} />
       <Hero {...SITE_DATA.hero} />
       <Quote text={SITE_DATA.quote} />
+      <About text={SITE_DATA.about} />
     </main>
   );
 }
