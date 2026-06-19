@@ -4,6 +4,7 @@ import Hero from "@/components/Hero";
 import Quote from "@/components/Quote";
 import About from "@/components/About";
 import Expertise from "@/components/Expertise";
+import Cases from "@/components/Cases";
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <Quote text={SITE_DATA.quote} />
       <About text={SITE_DATA.about} />
       <Expertise items={SITE_DATA.expertise} />
+      <Cases items={SITE_DATA.cases} />
     </main>
   );
 }
