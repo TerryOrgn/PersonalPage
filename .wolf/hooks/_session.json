@@ -18,7 +18,7 @@
       "first_read": "2026-06-19T15:36:04.739Z"
     },
     "/Users/yuantanglin/PersonalPage/src/components/Hero.tsx": {
-      "count": 1,
+      "count": 3,
       "tokens": 0,
       "first_read": "2026-06-19T15:36:05.054Z"
     },
@@ -48,7 +48,7 @@
       "first_read": "2026-06-19T15:36:14.661Z"
     },
     "/Users/yuantanglin/PersonalPage/src/components/Contact.tsx": {
-      "count": 1,
+      "count": 2,
       "tokens": 0,
       "first_read": "2026-06-19T15:36:15.016Z"
     },
@@ -110,6 +110,18 @@
       "action": "create",
       "tokens": 167,
       "at": "2026-06-19T15:37:38.582Z"
+    },
+    {
+      "file": "/Users/yuantanglin/PersonalPage/src/components/Hero.tsx",
+      "action": "edit",
+      "tokens": 11,
+      "at": "2026-06-19T15:47:10.564Z"
+    },
+    {
+      "file": "/Users/yuantanglin/PersonalPage/src/components/Contact.tsx",
+      "action": "create",
+      "tokens": 1718,
+      "at": "2026-06-19T15:47:27.432Z"
     }
   ],
   "edit_counts": {
@@ -119,11 +131,13 @@
     "src/components/Projects.tsx": 1,
     "src/components/Education.tsx": 1,
     "src/app/page.tsx": 1,
-    "src/app/layout.tsx": 1
+    "src/app/layout.tsx": 1,
+    "src/components/Hero.tsx": 1,
+    "src/components/Contact.tsx": 1
   },
   "anatomy_hits": 0,
   "anatomy_misses": 13,
-  "repeated_reads_warned": 0,
+  "repeated_reads_warned": 3,
   "cerebrum_warnings": 0,
-  "stop_count": 7
+  "stop_count": 8
 }

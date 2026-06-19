@@ -26,3 +26,6 @@
 | 23:37 | Created src/app/layout.tsx | — | ~167 |
 | 15:37 | 重新组织站点内容：从简历截图解析全部数据，更新site.ts数据结构，新增Skills/Projects/Education组件，移除旧的Expertise/Cases，更新page.tsx和layout.tsx | site.ts, Skills.tsx, Projects.tsx, Education.tsx, About.tsx, page.tsx, layout.tsx | build成功 | ~8000 |
 | 23:38 | Session end: 7 writes across 7 files (site.ts, About.tsx, Skills.tsx, Projects.tsx, Education.tsx) | 13 reads | ~5496 tok |
+| 23:40 | Session end: 7 writes across 7 files (site.ts, About.tsx, Skills.tsx, Projects.tsx, Education.tsx) | 13 reads | ~5496 tok |
+| 23:47 | Edited src/components/Hero.tsx | "#cases" → "#projects" | ~11 |
+| 23:47 | Created src/components/Contact.tsx | — | ~1718 |

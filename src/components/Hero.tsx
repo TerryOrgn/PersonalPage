@@ -48,7 +48,7 @@ export default function Hero({
         <p className="text-sm text-[var(--text-muted)] mb-12">{clients}</p>
         <div className="flex gap-4 justify-center">
           <button
-            onClick={() => scrollTo("#cases")}
+            onClick={() => scrollTo("#projects")}
             className="px-8 py-3 bg-[var(--accent)] text-[var(--bg-primary)] rounded-full font-medium text-sm uppercase tracking-wider hover:scale-105 transition-transform"
           >
             {ctaPrimary}

@@ -9,7 +9,7 @@ interface ContactProps {
 }
 
 export default function Contact({ email, linkedin, wechat }: ContactProps) {
-  const [submitted, setSubmitted] = useState(false);
+  const [sent, setSent] = useState(false);
   const [form, setForm] = useState({
     name: "",
     email: "",
@@ -19,14 +19,19 @@ export default function Contact({ email, linkedin, wechat }: ContactProps) {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+
+    const body = `姓名：${form.name}%0D%0A邮箱：${form.email}%0D%0A%0D%0A${form.message}`;
+    const mailto = `mailto:${email}?subject=${encodeURIComponent(form.subject)}&body=${body}`;
+
+    setSent(true);
+    window.location.href = mailto;
   };
 
   return (
     <section id="contact" className="px-6">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-sm uppercase tracking-[0.3em] text-[var(--text-secondary)] mb-4 text-center">
-          Contact
+          联系我
         </h2>
         <p className="text-center text-[var(--text-muted)] mb-16">
           有项目想聊？欢迎联系
@@ -35,10 +40,18 @@ export default function Contact({ email, linkedin, wechat }: ContactProps) {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-4xl mx-auto">
           {/* Form */}
           <div>
-            {submitted ? (
+            {sent ? (
               <div className="bg-[var(--bg-card)] border border-[var(--border)] rounded-lg p-8 text-center">
-                <p className="text-lg font-semibold mb-2">消息已发送！</p>
-                <p className="text-[var(--text-secondary)]">感谢您的来信，我会尽快回复。</p>
+                <p className="text-lg font-semibold mb-2">邮件客户端已打开</p>
+                <p className="text-[var(--text-secondary)] mb-4">
+                  如未自动打开，请手动发送至 {email}
+                </p>
+                <button
+                  onClick={() => setSent(false)}
+                  className="text-sm text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors underline"
+                >
+                  重新填写
+                </button>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-5">
@@ -119,16 +132,9 @@ export default function Contact({ email, linkedin, wechat }: ContactProps) {
             </div>
             <div>
               <p className="text-sm text-[var(--text-muted)] uppercase tracking-wider mb-1">
-                LinkedIn
+                电话
               </p>
-              <a
-                href={linkedin}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
-              >
-                查看 LinkedIn 主页
-              </a>
+              <p className="text-[var(--text-secondary)]">13681891649</p>
             </div>
             {wechat && (
               <div>
