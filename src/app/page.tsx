@@ -3,6 +3,7 @@ import Nav from "@/components/Nav";
 import Hero from "@/components/Hero";
 import Quote from "@/components/Quote";
 import About from "@/components/About";
+import Expertise from "@/components/Expertise";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Hero {...SITE_DATA.hero} />
       <Quote text={SITE_DATA.quote} />
       <About text={SITE_DATA.about} />
+      <Expertise items={SITE_DATA.expertise} />
     </main>
   );
 }
