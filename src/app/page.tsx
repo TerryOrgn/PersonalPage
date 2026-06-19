@@ -7,6 +7,7 @@ import Expertise from "@/components/Expertise";
 import Cases from "@/components/Cases";
 import Experience from "@/components/Experience";
 import Contact from "@/components/Contact";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
       <Cases items={SITE_DATA.cases} />
       <Experience items={SITE_DATA.experience} />
       <Contact email={SITE_DATA.contact.email} linkedin={SITE_DATA.contact.linkedin} wechat={SITE_DATA.contact.wechat} />
+      <Footer socialLinks={SITE_DATA.footer.socialLinks} copyright={SITE_DATA.footer.copyright} />
     </main>
   );
 }
