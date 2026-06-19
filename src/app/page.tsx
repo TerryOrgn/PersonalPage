@@ -1,7 +1,10 @@
+import { SITE_DATA } from "@/data/site";
+import Nav from "@/components/Nav";
+
 export default function Home() {
   return (
     <main>
-      <h1 className="text-center py-20 text-4xl">Terry Yuan</h1>
+      <Nav brand={SITE_DATA.nav.brand} links={SITE_DATA.nav.links} />
     </main>
   );
 }
