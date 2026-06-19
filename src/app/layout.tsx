@@ -2,10 +2,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Terry Yuan - 解决方案架构师",
+  title: "袁堂林 - Java技术架构师 · 技术经理",
   description:
-    "15年企业级系统研发经验，专注金融投资/风控/保险领域。为金融行业客户提供端到端技术解决方案。",
-  keywords: ["解决方案架构师", "金融科技", "保险科技", "Java", "架构设计"],
+    "15年Java技术栈开发与架构经验，8年+微服务架构设计与团队管理经验。专注汽车金融、金融风控、物流办公等领域核心系统架构设计与交付。",
+  keywords: ["Java架构师", "技术经理", "金融科技", "微服务", "Spring Cloud", "汽车金融", "风控系统"],
 };
 
 export default function RootLayout({
